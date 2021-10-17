@@ -1,0 +1,145 @@
+/* Basis helper color, size*/
+
+.head {
+  background-color: #faebd7;
+  
+}
+
+.content {
+  background-color: #afeeee;
+}
+
+.footer {
+  background-color: #ffc0cb;
+  
+}
+
+/* ----- GRIDS ----- */
+
+/* ----- BASIC GRID ----- */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(14, minmax(100px, auto));
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+  
+}
+
+.head {
+  grid-column: span 12;
+  grid-row: span 3;
+}
+
+.content {
+  grid-column: span 12;
+  grid-row: span 10;
+}
+
+.footer {
+  grid-column: span 12;
+  grid-row: span 1;
+}
+
+
+
+
+
+/*  ------ HEAD GRID ------  */
+
+.head {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(100px, auto));
+  grid-template-areas: 
+    "picture name name"
+    "picture intro intro"
+    "picture intro intro"
+}
+
+.name {
+  grid-area: name;
+}
+
+.picture {
+  grid-area: picture;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+
+
+
+/*  ------ CONTENT GRID ------  */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, minmax(100px, auto));
+}
+
+.work-header {
+  grid-column: span 12;
+  grid-row: span 1;
+}
+
+.work-now {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.skills-picture{
+  grid-column: span 6;
+  grid-row: span 3;
+}
+
+.skills {
+  grid-column: span 6;
+  grid-row: span 1;
+}
+
+.programs-header {
+  grid-column: span 12;
+  grid-row: span 1;
+}
+
+.programs {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.plans-header {
+  grid-column: span 12;
+  grid-row: span 1;
+}
+
+.plans {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+
+
+
+
+/*  ------ FOOTER GRID ------  */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1;
+  justify-items: center;
+  align-items: center;
+}
+
+.contact {
+  grid-column: span 1;
+  grid-row: span 1;
+}
