@@ -1,24 +1,114 @@
+/**
+ * OVERVIEW
+ *
+ * This project is separated to the following style sheets:
+ *
+ * css reset.css....CSS reset.
+ * base.css.............Global rules and helpers.
+ * layout.css...........CSS rules that control the layout of the page.
+ * components.css.......Own CSS for the components that build up the page.
+ */
+
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Variables............Globally-available variables.
+ * Box-sizing...........Better default `box-sizing`.
+ * Margins..............Top and bottom margins global values.
+ *
+ * BASE STYLES
+ * Fonts............Base font style.
+ * Backgrounds......Base backgrounds.
+ *
+ */
+
+
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+:root {
+  --primary-color: #e5e6eb ;
+  --secondary-color: rgba(229, 230, 235, 0.75);
+  --third-color: rgba(42, 87, 122, 0.86);
+  --font-color: white;
+}
+
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+
 * {
   box-sizing: border-box;
 }
 
-/*
-font-family: 'Aclonica', sans-serif;
-font-family: 'La Belle Aurore', cursive;
-font-family: 'Poppins', sans-serif;
-*/
+/*------------------------------------*\
+  #MARGINS
+\*------------------------------------*/
 
-/* ----- FONTS -----*/
+.header, .footer, .content {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.knowledges {
+  padding: 30px;
+}
+
+/*------------------------------------*\
+  #FONTS
+\*------------------------------------*/
 
 h1 {
   font-family: 'Aclonica', sans-serif;
-
+  font-size: max(24px, 2vw);
 }
 
 h2 {
   font-family: 'La Belle Aurore', cursive;
+  font-size: max(36px, 5vw);
 }
 
-p {
+p, a {
   font-family: 'Poppins', sans-serif;
+  font-size: max(16px, 1.5vw);
+  line-height: 1.25;
+}
+
+.skills a, .skills-picture a {
+  color: var(--primary-color);
+  font-style: bold;
+  font-size: max(26px, 2vw);
+  line-height: 1.5;
+}
+
+
+/*------------------------------------*\
+  #BACKGROUNDS
+\*------------------------------------*/
+
+.container {
+  background-image: url("pictures/header.png"),
+  url("pictures/footer.png");
+  background-repeat: no-repeat;
+  background-position: center top, center bottom; 
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-size: contain;
+}
+
+.knowledges {
+  background-image: url("https://raw.githubusercontent.com/Vivien13/introduction-page/main/pictures/programs2.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed;
+  background-clip: padding-box;
+  background-size: cover;
+}
+
+.skills-picture, .skills {
+  background-color: var(--third-color);
+  padding: 20px;
 }

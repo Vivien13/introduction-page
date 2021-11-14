@@ -1,19 +1,237 @@
-.picture {
-  height: 200px;
+/**
+ * CONTENTS
+ *
+ * BASE
+ *
+ * HEADER
+ *
+ * CONTENT
+ * --services
+ * --knowledges
+ * --program-skills
+ *
+ * FOOTER
+ *
+ * Pictures
+ */
+
+/*------------------------------------*\
+  #BASE
+\*------------------------------------*/
+
+.container {
+  place-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
 }
 
-.work-now img {
-  height: 50px;
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.header {
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  width: 80%;
+  background-color: var(--secondary-color);
 }
 
-.plans img{
-  height: 50px;
+  .name {
+    transform: rotate(10deg);
+  }
+
+  .header-picture {
+    justify-items: center;
+    align-items: center;
+  }
+
+  .intro {
+    padding: 10px;
+  }
+
+/*------------------------------------*\
+  #CONTENT
+\*------------------------------------*/
+.content {
+  background-color: var(--secondary-color);
+  place-content: center;
+  place-items: center;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
 }
 
-.programs img {
-  height: 50px;
+/*------------------------------------*\
+  #services
+\*------------------------------------*/
+
+.services {
+  height: 100%;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
 }
+
+  .work-header {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 20px;
+    border-bottom: 5px solid #295779;
+}
+
+  .works {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .work {
+    margin: 10px;
+  }
+
+
+/*------------------------------------*\
+  #knowledges
+\*------------------------------------*/
+
+.knowledges {
+  height: 100%;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  }
+
+  .skills {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+/*------------------------------------*\
+  #program-skills
+\*------------------------------------*/
+
+.program-skills {
+  height: 100%;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+  .program-header {
+    display: flex;
+    padding: 20px;
+    flex-flow: row wrap;
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: start;
+    border-bottom: 5px solid #295779;
+  }
+
+  .programs {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    align-content: center;
+  } 
+
+    .program p{
+      text-align: center;
+    }
+
+
+/*------------------------------------*\
+  #Pictures
+\*------------------------------------*/
+
+.header-picture {
+  width: min(250px, 200%);
+  border: 5px ridge #295779;
+  filter: drop-shadow(5px 5px 3px #071a36);
+}
+
 
 .contact img {
-  height: 50px;
+  width: min(100px, 10vw);
+  transition: all 1s ease-out .5s;
 }
+
+  .contact img:hover {
+   width: calc(min(100px, 10vw) + 10px);
+   filter: drop-shadow(5px 5px 3px #071a36);
+  }
+
+
+.work img {
+  height: min(150px, 100vh);
+  padding: 5px;
+  margin: 10px;
+  transition: all 1s ease-out .5s;
+}
+
+  .work img:hover {
+    height: calc(min(150px, 100vh) + 20px);
+    filter: drop-shadow(5px 5px 3px #071a36);
+  }
+ 
+  .work p {
+    text-align: center;
+  }
+
+
+
+.program img {
+  width: min(100px, 20vw);
+  padding: 5px;
+  margin: 10px;
+  transition: all 1s ease-out .5s;
+}
+
+  .program img:hover {
+    width: calc(min(100px, 20vh) + 20px);
+    filter: drop-shadow(5px 5px 3px #071a36);
+  }
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+.footer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
