@@ -23,7 +23,6 @@
   place-content: center;
   align-items: center;
   justify-items: center;
-  padding: 10px;
   height: 100%;
   width: 100%;
   background-color: var(--primary-color);
@@ -34,21 +33,18 @@
 \*------------------------------------*/
 
 .header {
-  align-items: center;
-  justify-items: center;
-  padding: 10px;
-  width: 80%;
+  padding: 25px;
+  width: 70%;
   background-color: var(--secondary-color);
+  place-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
   .name {
-    transform: rotate(10deg);
+    text-align: center;
   }
 
-  .header-picture {
-    justify-items: center;
-    align-items: center;
-  }
 
   .intro {
     padding: 10px;
@@ -173,19 +169,19 @@
 \*------------------------------------*/
 
 .header-picture {
-  width: min(250px, 200%);
+  width: min(30vw, 300px);
   border: 5px ridge #295779;
   filter: drop-shadow(5px 5px 3px #071a36);
 }
 
 
 .contact img {
-  width: min(100px, 10vw);
+  width: min(100px, 20vw);
   transition: all 1s ease-out .5s;
 }
 
   .contact img:hover {
-   width: calc(min(100px, 10vw) + 10px);
+   width: calc(min(100px, 20vw) + 10px);
    filter: drop-shadow(5px 5px 3px #071a36);
   }
 
@@ -234,4 +230,5 @@
   justify-content: space-around;
   padding: 10px;
 }
+
 

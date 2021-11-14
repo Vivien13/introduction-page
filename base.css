@@ -31,7 +31,7 @@
 
 :root {
   --primary-color: #e5e6eb ;
-  --secondary-color: rgba(229, 230, 235, 0.75);
+  --secondary-color: rgba(229, 230, 235, 0.4);
   --third-color: rgba(42, 87, 122, 0.86);
   --font-color: white;
 }
@@ -49,7 +49,7 @@
 \*------------------------------------*/
 
 .header, .footer, .content {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -68,7 +68,7 @@ h1 {
 
 h2 {
   font-family: 'La Belle Aurore', cursive;
-  font-size: max(36px, 5vw);
+  font-size: max(30px, 5vw);
 }
 
 p, a {
@@ -95,8 +95,8 @@ p, a {
   background-repeat: no-repeat;
   background-position: center top, center bottom; 
   background-attachment: scroll;
-  background-clip: border-box;
   background-size: contain;
+  padding: 0;
 }
 
 .knowledges {
@@ -104,7 +104,6 @@ p, a {
   background-repeat: no-repeat;
   background-position: center; 
   background-attachment: fixed;
-  background-clip: padding-box;
   background-size: cover;
 }
 
