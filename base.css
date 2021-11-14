@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+/*
+font-family: 'Aclonica', sans-serif;
+font-family: 'La Belle Aurore', cursive;
+font-family: 'Poppins', sans-serif;
+*/
+
+/* ----- FONTS -----*/
+
+h1 {
+  font-family: 'Aclonica', sans-serif;
+
+}
+
+h2 {
+  font-family: 'La Belle Aurore', cursive;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
